@@ -12,7 +12,16 @@ console.log(animals[0], animals[2], animals[4]);
 console.log(animals.length);
 
 let student = {
-	name:'bunny',
-	branch:'cse',
-	StudId:1
+  name: "bunny",
+  branch: "cse",
+  StudId: 1,
 };
+
+let firstName = 'bunny';
+let lastName = 'gorthi';
+let fullName = firstName + ' ' + lastName;
+console.log(fullName, fullName.length);
+console.log(fullName.toUpperCase());
+
+let Email = 'chakradhar.gorthi@gmail.com';
+console.log(Email);
