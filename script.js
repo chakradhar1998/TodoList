@@ -17,6 +17,8 @@ let student = {
   StudId: 1,
 };
 
+console.log(student);
+
 let firstName = 'bunny';
 let lastName = 'gorthi';
 let fullName = firstName + ' ' + lastName;
@@ -25,3 +27,26 @@ console.log(fullName.toUpperCase());
 
 let Email = 'chakradhar.gorthi@gmail.com';
 console.log(Email);
+
+const speak = function(name){
+	console.log(`${name}`);
+};
+
+speak('bunny');
+
+const calc = () => console.log(5);
+
+calc();
+
+const greet = () => console.log('hello, world');
+greet();
+
+const bill = (products, tax) => {
+	let total = 0;
+	for(let i = 0; i < products.length; i++){
+		total += products[i] + products[i] * tax;
+	}
+	return total;
+};
+
+console.log(bill([10,15,20,30], 0.2));
