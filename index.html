@@ -7,26 +7,37 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
+    <style>
+    html {
+    	background-color: #363636;
+    }
+      li {
+        margin: 0.5em 0;
+        font-size: 1.5em;
+      }
+    </style>
+<!--     <link rel="stylesheet" href="debug.css" /> -->
     <title>TODO LIST</title>
   </head>
   <body class="has-background-dark">
     <h1 class="title is-size-1 has-text-link has-text-centered">
       A Basic TODO List APP
     </h1>
-    <section class="section">
-      <input type="text" class="input mb-6" />
-      <button class="add button" onclick="clicked()">ADD</button>
+    <section class="section field is-grouped is-grouped-centered">
+      <p class="control">
+        <input class="input" type="text" placeholder="Add an Item" />
+      </p>
+      <button class="add button is-primary" onclick="clicked()">ADD</button>
     </section>
-    <section class="section">
-      <div class="List container">
-        <ul class="has-text-primary-light"></ul>
+    <section class="columns is-mobile is-centered">
+      <div class="column is-5">
+        <div>
+          <ul class="has-text-primary-light">
+            <div class="list-items has-text-centered"></div>
+          </ul>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
-    <style>
-      body {
-        height: 100vh;
-      }
-    </style>
   </body>
 </html>
